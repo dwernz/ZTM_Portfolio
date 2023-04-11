@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "../ZeroToMastery"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../ZTM_React"
+	}
+],
+"settings": {
+	"cSpell.words": [
+		"noopener",
+		"noreferrer"
+	]
+}
+}
