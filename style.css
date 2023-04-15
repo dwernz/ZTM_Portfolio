@@ -399,6 +399,8 @@ a {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
+  background: linear-gradient(125deg, rgba(255, 0, 0, .8) 15%, rgba(0, 0, 255, .8))75%,
+    linear-gradient(90deg, rgba(125, 0, 125, .5), rgba(0, 255, 0, .5));
 }
 
 .home-hero__content {
@@ -424,6 +426,7 @@ a {
 
 .home-hero__heading-primary {
   margin-bottom: 5rem;
+  color: white;
 }
 
 .home-hero__btn-theme {
