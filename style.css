@@ -10,6 +10,18 @@
   /* Theme Color in (R,G,B) format */
 }
 
+/********** Begin custom tags **********/
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+/********** End custom tags **********/
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;

@@ -8,6 +8,27 @@ const smMenuLink2 = document.querySelector('.main-header__sm-menu-link--2')
 const smMenuLink3 = document.querySelector('.main-header__sm-menu-link--3')
 const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
 
+// Custom script
+const viewMoreBtn = document.querySelector('#view_more_projects');
+const moreProjects =document.querySelector('#more_projects');
+viewMoreBtn.addEventListener('click', (event) => {
+  let x = event.target;
+  toggleVis(x);
+});
+
+function toggleVis(target) {
+  if (moreProjects.style.display === 'none') {
+    moreProjects.style.display = 'block';
+    viewMoreBtn.textContent = 'View Fewer Projects';
+  }
+  else {
+    moreProjects.style.display = 'none';
+    viewMoreBtn.textContent = 'View More Projects';
+  }
+}
+
+// End custom script
+
 smMenuBtn.addEventListener('click', () => {
   smMenu.style.transitionDelay = '0s'
   smMenu.classList.add('main-header__sm-menu--active')
