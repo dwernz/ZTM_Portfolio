@@ -11,13 +11,21 @@
 	},
 	{
 		"path": "../pokemon_weakness"
+	},
+	{
+		"path": "../facerecognitionbrain"
+	},
+	{
+		"path": "../node"
 	}
 ],
 "settings": {
 	"cSpell.words": [
+		"Clarifai",
 		"noopener",
 		"noreferrer",
-		"Robofriends"
+		"Robofriends",
+		"webfonts"
 	]
 }
 }
