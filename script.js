@@ -14,6 +14,7 @@ const moreProjects =document.querySelector('#more_projects');
 viewMoreBtn.addEventListener('click', (event) => {
   let x = event.target;
   toggleVis(x);
+  console.log('clicked');
 });
 
 function toggleVis(target) {
