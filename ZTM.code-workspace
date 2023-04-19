@@ -17,6 +17,15 @@
 	},
 	{
 		"path": "../node"
+	},
+	{
+		"path": "../awesome-node"
+	},
+	{
+		"path": "../smart-brain-api"
+	},
+	{
+		"path": "../ZtM-Job-Board"
 	}
 ],
 "settings": {
