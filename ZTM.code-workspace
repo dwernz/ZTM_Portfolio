@@ -1,13 +1,7 @@
 {
   "folders": [
 	{
-		"path": "../ZeroToMastery"
-	},
-	{
 		"path": "."
-	},
-	{
-		"path": "../ZTM_React"
 	},
 	{
 		"path": "../facerecognitionbrain"
@@ -17,6 +11,9 @@
 	},
 	{
 		"path": "../codebeginnershq"
+	},
+	{
+		"path": "../ZTM_JS_Projects"
 	}
 ],
 "settings": {
@@ -26,6 +23,7 @@
 		"noreferrer",
 		"Robofriends",
 		"webfonts"
-	]
+	],
+	"liveServer.settings.multiRootWorkspaceName": "ZTM_JS_Projects"
 }
 }
