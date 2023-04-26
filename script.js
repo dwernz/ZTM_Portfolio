@@ -8,13 +8,19 @@ const smMenuLink2 = document.querySelector('.main-header__sm-menu-link--2')
 const smMenuLink3 = document.querySelector('.main-header__sm-menu-link--3')
 const smMenuLink4 = document.querySelector('.main-header__sm-menu-link--4')
 
+const previousProject = document.getElementById('previousProject');
+const projectPage1 = document.getElementById('projectPage1');
+const projectPage2 = document.getElementById('projectPage2');
+const projectPage3 = document.getElementById('projectPage3');
+const nextProject = document.getElementById('nextProject');
+
+const page1 = document.getElementById('page1');
+const page2 = document.getElementById('page2');
+const page3 = document.getElementById('page3');
+
+let page = 1;
+
 // Custom script
-const viewMoreBtn = document.querySelector('#view_more_projects');
-const moreProjects =document.querySelector('#more_projects');
-viewMoreBtn.addEventListener('click', (event) => {
-  let x = event.target;
-  toggleVis(x);
-});
 
 function toggleVis(target) {
   if (moreProjects.style.display === 'none') {
@@ -160,3 +166,83 @@ const headerLogoConatiner = document.querySelector('.main-header__logo-container
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+previousProject.addEventListener('click', () => {
+    page--;
+
+    if (page <= 0) {
+        page = 1;
+    }
+
+    updatePage();
+});
+
+projectPage1.addEventListener('click', () => {
+    page = 1;
+
+    projectPage1.classList.add('active');
+
+    updatePage();
+});
+
+projectPage2.addEventListener('click', () => {
+    page = 2;
+
+    projectPage2.classList.add('active');
+
+    updatePage();
+});
+
+projectPage3.addEventListener('click', () => {
+    page = 3;
+
+    projectPage3.classList.add('active');   
+
+    updatePage();
+});
+
+nextProject.addEventListener('click', () => {
+    page++;
+
+    if (page >= 3) {
+        page = 3;
+    }
+
+    updatePage();
+});
+
+function updatePage() {
+    if (page === 1) {
+        previousProject.hidden = true;
+        nextProject.hidden = false;
+    }
+    else if (page === 3) {
+        nextProject.hidden = true;
+        previousProject.hidden = false;
+    }
+    else {
+        nextProject.hidden = false;
+        previousProject.hidden = false;
+    }
+    
+    projectPage1.classList.remove('active');
+    projectPage2.classList.remove('active');
+    projectPage3.classList.remove('active');
+
+    page1.hidden = true;
+    page2.hidden = true;
+    page3.hidden = true;
+
+    if (page === 1) {
+        projectPage1.classList.add('active');
+        page1.hidden = false;
+    }
+    else if (page === 2) {
+        projectPage2.classList.add('active');
+        page2.hidden = false;
+    }
+    else if (page === 3) {
+        projectPage3.classList.add('active');
+        page3.hidden = false;
+    }
+}
