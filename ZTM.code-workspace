@@ -11,15 +11,6 @@
 	},
 	{
 		"path": "../testCodes"
-	},
-	{
-		"path": "../robofriends"
-	},
-	{
-		"path": "../facerecognitionbrain"
-	},
-	{
-		"path": "../ZeroToMastery/DOM Manipulation/BackgroundGenerator"
 	}
 ],
 "settings": {
