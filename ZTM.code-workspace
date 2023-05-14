@@ -11,6 +11,9 @@
 	},
 	{
 		"path": "../testCodes"
+	},
+	{
+		"path": "../react-portfolio"
 	}
 ],
 "settings": {
