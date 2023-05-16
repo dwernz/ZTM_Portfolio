@@ -15,12 +15,14 @@ const projectPage1 = document.getElementById('projectPage1');
 const projectPage2 = document.getElementById('projectPage2');
 const projectPage3 = document.getElementById('projectPage3');
 const projectPage4 = document.getElementById('projectPage4');
+const projectPage5 = document.getElementById('projectPage5');
 const nextProject = document.getElementById('nextProject');
 
 const page1 = document.getElementById('page1');
 const page2 = document.getElementById('page2');
 const page3 = document.getElementById('page3');
 const page4 = document.getElementById('page4');
+const page5 = document.getElementById('page5');
 
 let page = 1;
 
@@ -173,15 +175,11 @@ previousProject.addEventListener('click', () => {
 projectPage1.addEventListener('click', () => {
     page = 1;
 
-    projectPage1.classList.add('active');
-
     updatePage();
 });
 
 projectPage2.addEventListener('click', () => {
     page = 2;
-
-    projectPage2.classList.add('active');
 
     updatePage();
 });
@@ -189,24 +187,26 @@ projectPage2.addEventListener('click', () => {
 projectPage3.addEventListener('click', () => {
     page = 3;
 
-    projectPage3.classList.add('active');   
-
     updatePage();
 });
 
 projectPage4.addEventListener('click', () => {
   page = 4;
 
-  projectPage4.classList.add('active');
-
   updatePage();
 });
+
+projectPage5.addEventListener('click', () => {
+  page = 5;
+
+  updatePage();
+})
 
 nextProject.addEventListener('click', () => {
     page++;
 
-    if (page >= 4) {
-        page = 4;
+    if (page >= 5) {
+        page = 5;
     }
 
     updatePage();
@@ -217,7 +217,7 @@ function updatePage() {
         previousProject.hidden = true;
         nextProject.hidden = false;
     }
-    else if (page === 4) {
+    else if (page === 5) {
         nextProject.hidden = true;
         previousProject.hidden = false;
     }
@@ -230,11 +230,13 @@ function updatePage() {
     projectPage2.classList.remove('active');
     projectPage3.classList.remove('active');
     projectPage4.classList.remove('active');
+    projectPage5.classList.remove('active');
 
     page1.hidden = true;
     page2.hidden = true;
     page3.hidden = true;
     page4.hidden = true;
+    page5.hidden = true;
 
     if (page === 1) {
       projectPage1.classList.add('active');
@@ -251,5 +253,13 @@ function updatePage() {
     else if (page === 4) {
       projectPage4.classList.add('active');
       page4.hidden = false;
+    }
+    else if (page === 4) {
+      projectPage4.classList.add('active');
+      page4.hidden = false;
+    }
+    else if (page === 5) {
+      projectPage5.classList.add('active');
+      page5.hidden = false;
     }
 }
