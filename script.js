@@ -130,21 +130,21 @@ const eventFire = (el, etype) => {
   }
 }
 
-themeColorSelector.addEventListener('click', () => {
-  eventFire(themeColorSelectorInput, 'input')
-})
+// themeColorSelector.addEventListener('click', () => {
+//   eventFire(themeColorSelectorInput, 'input')
+// })
 
-const setDynamicColor = (color) => {
+// const setDynamicColor = (color) => {
 
-  const { r, g, b } = hexToRgb(`${color}`)
+//   const { r, g, b } = hexToRgb(`${color}`)
   
-  root.style.setProperty('--themeColor', `${r},${g},${b}`);
-  //localStorage.setItem('color', color)
-}
+//   root.style.setProperty('--themeColor', `${r},${g},${b}`);
+//   //localStorage.setItem('color', color)
+// }
 
-themeColorSelectorInput.addEventListener('input', (e) => {
-  setDynamicColor(e.target.value)
-})
+// themeColorSelectorInput.addEventListener('input', (e) => {
+//   setDynamicColor(e.target.value)
+// })
 
 // if (localStorage.getItem('color')) {
 //   let userSelectedColor = localStorage.getItem('color')
