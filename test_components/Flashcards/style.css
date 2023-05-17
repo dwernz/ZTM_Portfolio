@@ -35,7 +35,7 @@ h1 {
 
 .card {
     width: 350px;
-    height: 400px;
+    height: 425px;
     color: var(--dark-color);
     margin: 20px;
     display: flex;
