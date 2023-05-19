@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YRV5Z2KPT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0YRV5Z2KPT');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu Overlay -->
+  <div class="overlay overlay-slide-left" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav1" class="slide-out-1"><a href="#home">Home</a></li>
+        <li id="nav2" class="slide-out-2"><a href="#about">About</a></li>
+        <li id="nav3" class="slide-out-3"><a href="#skills">Skills</a></li>
+        <li id="nav4" class="slide-out-4"><a href="#projects">Projects</a></li>
+        <li id="nav5" class="slide-out-5"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Menu Bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- Sections -->
+  <section id="home"><a href="https://dwernz.github.io/ZTM_Portfolio" target="_blank">Daniel Design</a></section>
+  <section id="about"><h1>Learn More About Me</h1></section>
+  <section id="skills"><h1>These Are My Strengths</h1></section>
+  <section id="projects"><h1>These Are My Results</h1></section>
+  <section id="contact"><h1>Available Anytime</h1></section>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

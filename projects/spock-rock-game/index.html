@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YRV5Z2KPT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0YRV5Z2KPT');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spock Rock Game</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+        </div>
+        <!-- Player Container -->
+        <div class="player-container" id="player">
+            <h2>You - <span id="playerScore">0</span><span class="choice" id="player-choice"></span></h2>
+            <i class="far fa-hand-rock" title="rock" id="playerRock" onclick="select('rock')"></i>
+            <i class="far fa-hand-paper" title="paper" id="playerPaper" onclick="select('paper')"></i>
+            <i class="far fa-hand-scissors" title="scissors" id="playerScissors" onclick="select('scissors')"></i>
+            <i class="far fa-hand-lizard" title="lizard" id="playerLizard" onclick="select('lizard')"></i>
+            <i class="far fa-hand-spock" title="spock" id="playerSpock" onclick="select('spock')"></i>
+        </div>
+        <!-- Computer Container -->
+        <div class="player-container" id="computer">
+            <h2>Computer - <span id="computerScore">0</span><span class="choice" id="computer-choice"></span></h2>
+            <i class="far fa-hand-rock" title="rock" id="computerRock"></i>
+            <i class="far fa-hand-paper" title="paper" id="computerPaper"></i>
+            <i class="far fa-hand-scissors" title="scissors" id="computerScissors"></i>
+            <i class="far fa-hand-lizard" title="lizard" id="computerLizard"></i>
+            <i class="far fa-hand-spock" title="spock" id="computerSpock"></i>
+        </div>
+        <!-- Reset Icon -->
+        <i class="fas fa-sync-alt reset-icon" title="reset" onclick="resetAll()"></i>
+        <!-- Results -->
+        <div class="result-container">
+            <h3 class="result-text" id="resultText"></h3>
+        </div>
+    </div>
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
