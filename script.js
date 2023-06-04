@@ -16,6 +16,7 @@ const projectPage2 = document.getElementById('projectPage2');
 const projectPage3 = document.getElementById('projectPage3');
 const projectPage4 = document.getElementById('projectPage4');
 const projectPage5 = document.getElementById('projectPage5');
+const projectPage6 = document.getElementById('projectPage6');
 const nextProject = document.getElementById('nextProject');
 
 const page1 = document.getElementById('page1');
@@ -23,6 +24,7 @@ const page2 = document.getElementById('page2');
 const page3 = document.getElementById('page3');
 const page4 = document.getElementById('page4');
 const page5 = document.getElementById('page5');
+const page6 = document.getElementById('page6');
 
 let page = 1;
 
@@ -200,13 +202,19 @@ projectPage5.addEventListener('click', () => {
   page = 5;
 
   updatePage();
+});
+
+projectPage6.addEventListener('click', () => {
+  page = 6;
+
+  updatePage();
 })
 
 nextProject.addEventListener('click', () => {
     page++;
 
-    if (page >= 5) {
-        page = 5;
+    if (page >= 6) {
+        page = 6;
     }
 
     updatePage();
@@ -217,7 +225,7 @@ function updatePage() {
         previousProject.hidden = true;
         nextProject.hidden = false;
     }
-    else if (page === 5) {
+    else if (page === 6) {
         nextProject.hidden = true;
         previousProject.hidden = false;
     }
@@ -231,12 +239,14 @@ function updatePage() {
     projectPage3.classList.remove('active');
     projectPage4.classList.remove('active');
     projectPage5.classList.remove('active');
+    projectPage6.classList.remove('active');
 
     page1.hidden = true;
     page2.hidden = true;
     page3.hidden = true;
     page4.hidden = true;
     page5.hidden = true;
+    page6.hidden = true;
 
     if (page === 1) {
       projectPage1.classList.add('active');
@@ -261,5 +271,9 @@ function updatePage() {
     else if (page === 5) {
       projectPage5.classList.add('active');
       page5.hidden = false;
+    }
+    else if (page === 6) {
+      projectPage6.classList.add('active');
+      page6.hidden = false;
     }
 }
