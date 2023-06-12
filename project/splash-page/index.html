@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YRV5Z2KPT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0YRV5Z2KPT');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Splash Page</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <!-- Change the favicon if default isn't desired. -->
+    <!-- <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain="> -->
+
+    <!--  Stylesheets -->
+
+    <!-- Custom Stylesheets-->
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Brand Logo -->
+        <img src="./assets/habitual-branding.png" alt="Habitual Logo" class="brand-img">
+        <!-- Background Toggle -->
+        <div class="background-toggles" title="Change background">
+            <div class="background-1" onclick="changeBackground('1')"></div>
+            <div class="background-2" onclick="changeBackground('2')"></div>
+            <div class="background-3" onclick="changeBackground('3')"></div>
+        </div>
+        <!-- Title & Text -->
+        <div class="text-container">
+            <h1 class="title">Find the stuff you'll love.</h1>
+            <p class="text">Aliquam rhoncus pretium dolor volutpat lectus odio non tellus neque. Aliquet et purus nibh bibendum integer etiam in enim nisi.</p>
+            <div class="app-store-btn">
+                <a href="https://apple.com" target="_blank">
+                    <img src="./assets/app-store-button.png" alt="App Store Button">
+                </a>
+            </div>
+            <div class="google-store-btn">
+                <a href="https://play.google.com" target="_blank">
+                    <img src="./assets/google-play-button.png" alt="Google Play Button">
+                </a>
+            </div>
+        </div>
+        <!-- Main Image -->
+        <div class="main-image-container">
+            <img src="./assets/main-image.png" alt="Landing Page Mockup">
+        </div>
+        <!-- Images -->
+        <img src="./assets/profile.png" alt="profile" class="profile-img">
+        <img src="./assets/orders.png" alt="orders" class="orders-img">
+        <img src="./assets/home.png" alt="home" class="home-img">
+        <img src="./assets/cart.png" alt="cart" class="cart-img">
+        <img src="./assets/product.png" alt="product" class="product-img">
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
