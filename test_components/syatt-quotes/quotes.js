@@ -139,4 +139,56 @@ const localQuotes = [
         text: `They haven't learned that when they're throwing dirt, they're not doing a thing but losing ground.`,
         author: "Zig Ziglar"
     },
+    {
+        text: `No one on the face of Earth can make you feel inferior without your permission.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `God loves you - whether you like it or not!`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `One reason many people never attempt new things is their fear of failure.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `The most destitute person in the world is the one without a smile.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `No one is useless in this world who lightens the burden of it to anyone else.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `You acquire much of the thinking mannerisms and characteristics of the people you are around.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `You will make a lousy anybody else, but you are the best "you" in existence.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `Life is an echo. What you send out - comes back.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `It's a universal truth that you treat people exactly like you see them.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `A sincere compliment is one of the most effective teaching and motivational methods in existence.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `A lot of people have gone further than they thought they could because someone else thought they could.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `The greatest good we can do for anyone is not to share out wealth with them, but rather to reveal their own wealth to them.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `The first step to success is knowing your own potential, the second step is knowing the potential of others.`,
+        author: "Zig Ziglar"
+    },
 ];
