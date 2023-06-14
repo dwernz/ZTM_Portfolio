@@ -119,4 +119,24 @@ const localQuotes = [
         text: "There is little you can learn from doing nothing.",
         author: "Zig Ziglar"
     },
+    {
+        text: "Opportunity for growth and service lies with the individual.",
+        author: "Zig Ziglar"
+    },
+    {
+        text: `There is no such thing as a "good" memory or a "bad" memory; it is either trained or untrained.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `Experience has nothing to do with ability.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `Take what you have and use it and your talent will be increased which brings more rewards.`,
+        author: "Zig Ziglar"
+    },
+    {
+        text: `They haven't learned that when they're throwing dirt, they're not doing a thing but losing ground.`,
+        author: "Zig Ziglar"
+    },
 ];
