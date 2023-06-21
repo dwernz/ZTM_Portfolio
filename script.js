@@ -17,6 +17,7 @@ const projectPage3 = document.getElementById('projectPage3');
 const projectPage4 = document.getElementById('projectPage4');
 const projectPage5 = document.getElementById('projectPage5');
 const projectPage6 = document.getElementById('projectPage6');
+const projectPage7 = document.getElementById('projectPage7');
 const nextProject = document.getElementById('nextProject');
 
 const page1 = document.getElementById('page1');
@@ -25,6 +26,7 @@ const page3 = document.getElementById('page3');
 const page4 = document.getElementById('page4');
 const page5 = document.getElementById('page5');
 const page6 = document.getElementById('page6');
+const page7 = document.getElementById('page7');
 
 let page = 1;
 
@@ -210,11 +212,17 @@ projectPage6.addEventListener('click', () => {
   updatePage();
 })
 
+projectPage7.addEventListener('click', () => {
+  page = 7;
+
+  updatePage();
+})
+
 nextProject.addEventListener('click', () => {
     page++;
 
-    if (page >= 6) {
-        page = 6;
+    if (page >= 7) {
+        page = 7;
     }
 
     updatePage();
@@ -225,7 +233,7 @@ function updatePage() {
         previousProject.hidden = true;
         nextProject.hidden = false;
     }
-    else if (page === 6) {
+    else if (page === 7) {
         nextProject.hidden = true;
         previousProject.hidden = false;
     }
@@ -240,6 +248,7 @@ function updatePage() {
     projectPage4.classList.remove('active');
     projectPage5.classList.remove('active');
     projectPage6.classList.remove('active');
+    projectPage7.classList.remove('active');
 
     page1.hidden = true;
     page2.hidden = true;
@@ -247,6 +256,7 @@ function updatePage() {
     page4.hidden = true;
     page5.hidden = true;
     page6.hidden = true;
+    page7.hidden = true;
 
     if (page === 1) {
       projectPage1.classList.add('active');
@@ -275,5 +285,9 @@ function updatePage() {
     else if (page === 6) {
       projectPage6.classList.add('active');
       page6.hidden = false;
+    }
+    else if (page === 7) {
+      projectPage7.classList.add('active');
+      page7.hidden = false;
     }
 }
